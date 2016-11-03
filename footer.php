@@ -1,6 +1,24 @@
 <footer>
   <div class="container">
-    <p>&copy; HackerYou <?php echo date('Y'); ?></p>
+    <div class="grid">
+    	<h3>
+    		E-mail
+    	</h3>
+    	<p>
+    		<?php the_author_meta('email') ?>
+    	</p>
+    </div>
+    <div class="grid">
+    	<h2><?php bloginfo( 'name' ); ?></h2>
+    	
+    </div>
+    <div class="grid">
+    	<h3>Follow Me:</h3>
+    	<?php wp_nav_menu( array(
+    	  'container' => false,
+    	  'theme_location' => 'social'
+    	)); ?>
+    </div>
   </div>
 </footer>
 

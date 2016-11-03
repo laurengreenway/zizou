@@ -13,11 +13,17 @@
 @import 'sidebar';
 @import 'comments';
 @import 'footer';
+@import 'variables';
+
 /*
 ====================================
 Default Styling
 ====================================
 */
+
+html {
+	font-size: 10px;
+}
 
 img {
 	max-width: 100%;
@@ -25,6 +31,29 @@ img {
 
 body {
 	color: #333;
+}
+
+h1 {
+	font-family: $display;
+	font-size: 3rem;
+}
+h2 {
+	font-family: $display;
+	font-size: 2rem;
+	color: $white;
+}
+h3 {
+	font-family: $display;
+	font-size: 2rem;
+}
+
+p {
+	font-family: $hind;
+	font-size: 1.6rem;
+}
+
+a {
+	font-family: $monsterat;
 }
 
 .container {
@@ -42,6 +71,16 @@ body {
 	width: 100%;
 }
 
+.hero {
+	background-image: url(images/open-road.jpeg);
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 
 
 
