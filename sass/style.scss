@@ -111,6 +111,17 @@ a {
 	}
 }
 
+section.insta {
+	.grid-cell:first-child {
+		width: 80%;
+		.wdi_load_more {
+			display: none;
+		}
+	}
+	.grid-cell:last-child {
+		width: 20%;
+	}
+}
 
 
 

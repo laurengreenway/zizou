@@ -6,7 +6,7 @@
         <div class="grid-cell">
           <h2><?php the_field('home_latest_stories'); ?></h2>
           <p><?php the_field('home_description'); ?></p>
-          <button class="btn"></button><?php the_field('home_view_more') ?>
+          <button class="btn"><?php the_field('home_view_more') ?></button>
         </div>
       <?php 
         $postLoop = new WP_Query(array(
@@ -32,8 +32,16 @@
       <h2><?php the_field('home_quote'); ?></h2>
       <p><?php the_field('home_quote_explained'); ?></p>
     </section>
-    <section class="insta">
-      <?php echo wdi_feed(array('id'=>'1')); ?>
+    <section class="insta grid">
+      <div class="grid-cell">
+        <?php echo wdi_feed(array('id'=>'1')); ?>
+      </div>
+      <div class="grid-cell">
+        <h2>Instagram</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia deserunt non iure aperiam quaerat, odit facere esse quo blanditiis eaque.</p>
+        <button class="btn">View my Instagram</button>
+      </div>
+      
     </section>
 
   </div> <!-- /.container -->
