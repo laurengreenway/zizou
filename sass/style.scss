@@ -62,9 +62,8 @@ a {
 }
 
 .content {
-	float: left;
-	width: 65%;
-	margin-right: 5%;
+	width: 75%;
+	margin: 0 auto;
 }
 
 .full {
@@ -72,18 +71,45 @@ a {
 }
 
 .hero {
-	background-image: url(images/open-road.jpeg);
 	-webkit-background-size: cover;
 	background-size: cover;
 	background-position: center center;
 	height: 100vh;
-	display: flex;
 	align-items: center;
 	justify-content: center;
+
 }
 
+.grid {
+	display: flex;
+	flex-direction: row;
+}
 
+.grid-cell {
+	flex: 1 0 auto;
+}
 
+.btn {
+	background: rgba(0,0,0,0);
+	padding: 1rem;
+	font-family: $monsterat;
+	border-bottom: 2px solid $black;
+}
+
+.latest-posts {
+	margin: 5rem auto;
+	.grid-cell {
+		width: calc(25% - 2rem);
+		margin-right: 2rem;
+		&:last-of-type{
+			margin-right:0;
+		}
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+}
 
 
 
